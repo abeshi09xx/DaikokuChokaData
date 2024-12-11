@@ -12,6 +12,7 @@ data['month'] = data['date'].dt.month
 
 # Streamlitアプリ
 st.title("魚種別・月別の釣果数可視化")
+st.write("2021年3月14日からの全期間データを集計しています。")
 
 # ユーザーが選択できるフィルタ
 fish_names = st.multiselect(
@@ -39,8 +40,3 @@ fig = px.bar(
 
 # グラフを表示
 st.plotly_chart(fig)
-
-st.title("データ可視化サンプル")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
